@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/Screen/Home/home_screen.dart';
+import 'package:food_app/theme.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,10 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
+          scaffoldBackgroundColor: bgcolor,
           fontFamily: "Poppins",
-          textTheme:
-              TextTheme(headline5: TextStyle(fontWeight: FontWeight.bold))),
+          textTheme: TextTheme(
+              headline5:
+                  TextStyle(fontWeight: FontWeight.bold, color: headline))),
       home: const HomeScreen(),
     );
   }
