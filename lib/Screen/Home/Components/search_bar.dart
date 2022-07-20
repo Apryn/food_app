@@ -11,12 +11,16 @@ class SearchBar extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20, right: 10, top: 20, bottom: 10),
       height: 70,
       width: double.infinity,
-      child: const TextField(
-        decoration: InputDecoration(
-            border: OutlineInputBorder(),
-            prefixIcon: Icon(
-              Icons.search,
-            )),
+      child: const Center(
+        child: TextField(
+          decoration: InputDecoration(
+              alignLabelWithHint: true,
+              floatingLabelAlignment: FloatingLabelAlignment.center,
+              border: OutlineInputBorder(),
+              prefixIcon: Icon(
+                Icons.search,
+              )),
+        ),
       ),
     );
   }
